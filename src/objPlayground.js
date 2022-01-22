@@ -38,10 +38,9 @@ const calculator = (number1, number2) => {
   const mult = number1 * number2;
   let div = Math.floor(number1 / number2);
   const sub = number1 - number2;
-  
+
   return { sum, mult, div, sub };
 };
-console.log(calculator(1, 3));
 
 const arrayGenerator = (type, object) => {
   if (type === 'keys') {
@@ -54,7 +53,5 @@ const arrayGenerator = (type, object) => {
     return Object.entries(object);
   }
 };
-
-console.log(arrayGenerator('entries', { sum: 3, mult: 2, div: 0, sub: -1 }));
 
 module.exports = { calculator, arrayGenerator };
